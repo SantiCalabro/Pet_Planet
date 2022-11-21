@@ -13,9 +13,10 @@ export const GET_FILTERED = "GET_FILTERED";
 export const CLEAR_DETAIL = "CLEAR_DETAIL";
 export const CLEAR_FILTER = "CLEAR_FILTER";
 export const SET_LANGUAGE = "SET_LANGUAGE";
-
+// const url = "http://localhost:3001";
+const url = "https://piback-production-00ff.up.railway.app";
 export const showDogs = () => dispatch => {
-  return fetch("/dogs")
+  return fetch(`${url}/dogs`)
     .then(res => res.json())
     .then(res => {
       dispatch({ type: SHOW_DOGS, payload: res });
@@ -23,7 +24,7 @@ export const showDogs = () => dispatch => {
     .catch(() => dispatch({ type: SET_ERROR }));
 };
 export const showDetail = id => dispatch => {
-  return fetch(`/dogs/${id}`)
+  return fetch(`${url}/dogs/${id}`)
     .then(res => res.json())
     .then(res => {
       dispatch({ type: SHOW_DETAIL, payload: res });
@@ -31,7 +32,7 @@ export const showDetail = id => dispatch => {
     .catch(() => dispatch({ type: SET_ERROR }));
 };
 export const showTemperaments = () => dispatch => {
-  return fetch("/temperaments")
+  return fetch(`${url}/temperaments`)
     .then(res => res.json())
     .then(res => {
       dispatch({ type: SHOW_TEMPS, payload: res });
@@ -40,7 +41,7 @@ export const showTemperaments = () => dispatch => {
 };
 
 export const showBreeds = () => dispatch => {
-  return fetch("/breeds")
+  return fetch(`${url}/breeds`)
     .then(res => res.json())
     .then(res => {
       dispatch({ type: SHOW_BREEDS, payload: res });
@@ -49,7 +50,7 @@ export const showBreeds = () => dispatch => {
 };
 
 export const getCreated = () => dispatch => {
-  return fetch("/dogs/created")
+  return fetch(`${url}/dogs/created`)
     .then(res => res.json())
     .then(res => {
       dispatch({ type: GET_CREATED, payload: res });
@@ -59,7 +60,7 @@ export const getCreated = () => dispatch => {
 
 export const postDog = payload => async dispatch => {
   try {
-    const res = await axios.post("/dogs", payload);
+    const res = await axios.post(`${url}/dogs`, payload);
     return dispatch({ type: POST_DOG, payload: res.data });
   } catch (e) {
     console.log(e);
@@ -69,7 +70,7 @@ export const postDog = payload => async dispatch => {
 
 export const dogUpdate = (id, payload) => async dispatch => {
   try {
-    const res = await axios.put(`/dogs?id=${id}`, payload);
+    const res = await axios.put(`${url}/dogs?id=${id}`, payload);
     return dispatch({ type: DOG_UPDATE, payload: res.data });
   } catch {
     return dispatch({ type: SET_ERROR });
@@ -78,7 +79,7 @@ export const dogUpdate = (id, payload) => async dispatch => {
 
 export const dogDelete = id => async dispatch => {
   try {
-    await axios.delete(`/dogs?id=${id}`);
+    await axios.delete(`${url}/dogs?id=${id}`);
     return dispatch({ type: DOG_DELETE });
   } catch (e) {
     console.log(e);
