@@ -1,0 +1,38 @@
+.general{
+  background-color: #0E0040;
+  width: 100%;
+  display: flex;
+}
+.titleContainer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  top: 140px;
+  right: 900px;
+  z-index: 501;
+  color: #fff;
+}
+
+.subtitleContainer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  top: 140px;
+  right: 900px;
+  z-index: 502;
+  color: #fff;
+}
+
+.title{
+  font-size: 30px;
+  color: #fff;
+}
+
+
+.pic{
+  width: 65%;
+  position: absolute;
+  top: 100px;
+}

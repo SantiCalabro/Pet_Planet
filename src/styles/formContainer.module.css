@@ -1,0 +1,32 @@
+.formContainer{
+  position: relative;
+  top: 100px;
+
+  height: 700px;
+
+}
+.box{
+  background-color: rgb(230, 230, 230);
+  width: 670px;
+  height: 700px;
+  float: left;
+
+  position: absolute;
+}
+.formContainer h1{
+  float: left;
+  margin-left: 100px;
+  position: relative;
+  color: #0E0040;
+  top:20px;
+  text-align: left;
+}
+
+.formContainer p{
+  /* color: #0E0040; */
+  float: left;
+  margin-left: 100px;
+  position: relative;
+  top:20px;
+
+}

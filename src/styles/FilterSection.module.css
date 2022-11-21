@@ -1,0 +1,74 @@
+.container{
+    text-align: left;
+    margin-left: 50px;
+    top:150px;
+    display: block;
+    width: 15%;
+    height: 30%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    border: solid 4px #FA450E;
+    border-radius: 25px;
+}
+.filterLabel{
+width: 90px;
+transform: rotate(-15deg);
+position: relative;
+bottom: 25px;
+left: 60px;
+    
+}
+
+
+.tempSelector{
+    background-color: transparent;
+    padding: 3px;
+    color: #FA450E;
+    border: solid 1px #FA450E;
+    border-radius: 5px;
+    position: relative;
+    bottom: 20px;
+    margin-left: 22px;
+    margin-top: 10px;
+    width: 80%;
+    cursor: pointer;
+}
+.tempSelector:focus{
+    outline-style: none;
+}
+
+.orderTitle{
+    color: #FFF;
+    margin-left: 22px;
+    position: relative;
+    bottom: 16px;
+    font-size: 14px;
+}
+.order{
+    background-color: transparent;
+    border: solid 1px #FA450E;
+    color: #FA450E;
+    position: relative;
+    padding: 0px 5px 2px 5px;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 40px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.orderBtn{
+  margin-left: 20px;
+  margin-top:-12px;
+}
+.order:hover{
+    background-color: #FA450E;
+    color: #0E0040;
+
+}
+
+.pressed{
+    background-color: #FA450E;
+    color: #0E0040;
+}

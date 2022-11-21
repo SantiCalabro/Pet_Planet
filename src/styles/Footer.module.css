@@ -1,0 +1,95 @@
+.container{
+    background-color: #07001f;
+    height: 120px;
+    display: flex;
+    position:relative;
+   float: bottom;
+    width: 100%;
+    z-index: 200;
+}
+.container h3{
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.created{
+    color: #FA450E;
+    margin-top: 10px;
+}
+.dataContainer{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.about{
+    border: none;
+    height: 60px;
+    margin-top: -10px;
+    margin-left:-210px;
+    
+}
+.about h3{
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    right: 150px;
+    margin-top: -25px;
+    font-size: 20px;
+}
+.about h3:hover{
+    color: #FA450E;
+    transition: 0.2s ease-in-out;
+}
+.project{
+    margin-top: -10px;
+    padding-right:120px;
+    border-right: solid 1px #fff;
+    height: 80px;
+}
+.project h3{
+    color: #fff;
+    position: relative;
+    margin-bottom:5px;
+}
+.project h3:hover{
+    color: #FA450E;
+    transition: 0.2s ease-in-out;
+}
+.line{
+    position: relative;
+    top: 0px;
+    opacity: 50%;
+}
+
+.name{
+    font-size: 20px;
+    color: #FA450E;
+}
+.contact{
+   background-color: #be2c00;
+   display: flex;
+   justify-content: center;
+   cursor: pointer;
+    position: absolute;
+    width: 100%;
+    margin-top: 100px;
+    
+}
+
+.contact:hover{
+    background-color: #FA450E;
+    transition: 0.15s ease-in-out;
+ }
+.contact a{
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+.description{
+    color: #fff;
+}

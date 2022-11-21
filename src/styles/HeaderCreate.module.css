@@ -1,0 +1,16 @@
+
+h1{
+    color: #fff;
+    font-size: 36px;
+
+}
+.subtitle{
+  color: #0E0040;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 10px;
+  }

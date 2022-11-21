@@ -1,0 +1,93 @@
+.general{
+    background-color: #0E0040;
+    height: 700px;
+ 
+}
+
+
+hr{
+    position: fixed;
+    top: 100px;
+    border: none;
+    border-top: solid 1px #fff;
+    width: 100%;
+    z-index: 500;
+
+}
+.sidePic{
+    height: 420px;
+    position: fixed;
+    top: 310px;
+    left: 15px;
+    z-index:100;
+    cursor: pointer;
+
+}
+.createBtn{
+    position: fixed;
+    top:500px;
+    right: 50px;
+    width: 140px;
+    cursor: pointer;
+    z-index: 700;
+    filter: grayscale(100%);
+}
+
+.createBtn:hover{
+    filter: grayscale(0%);
+    width:150px;
+    transition: 0.05s ease-in-out;
+}
+.loadingContainer{
+    margin-top: -100px;
+    height: 700px;
+}
+.SearchBar{
+    z-index: 780;
+    position: relative;
+    display: flex;
+    top: 65px;   
+    right: 60px;
+    margin-bottom:30px
+}
+
+.picPointer{
+z-index: 900;
+background-color: transparent;
+height: 300px;
+width: 200px;
+position: absolute;
+margin-top: 350px;
+left: 100px;
+cursor: pointer;
+}
+ 
+.globe{
+    z-index: 200;
+    width: 140px;
+    display: flex;
+    rotate: -5deg;
+    cursor: pointer;
+    position: fixed;
+    margin-top: 190px;
+    left: 100px;
+}
+.globeMsg{
+    position: absolute;
+    color: #0E0040;
+    font-weight: 600;
+    rotate: -5deg;
+    margin-top: 220px;
+    z-index:210;
+    left: 130px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+}
+.globeMsg:hover{
+    color: orangered;
+    transition: 0.15s;
+}
+.hidden{
+    display: none;
+}

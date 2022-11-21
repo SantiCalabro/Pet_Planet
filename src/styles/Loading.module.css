@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    width: 100%;
+}
+.laika{
+    position: absolute;
+    width: 100%;
+    margin-top: -30px;
+}
+
+
+.firstLine, .secondLine, .thirdLine{
+    z-index:810;
+    position: absolute;
+    color: #0E0040;
+    left: 852px;
+}
+.firstLine{
+    margin-top: 400px;
+    font-size: 14px;
+}
+.secondLine{
+    margin-top: 420px;
+    font-size: 14px;
+}
+.thirdLine{
+    margin-top: 435px;
+    font-size: 14px;
+}

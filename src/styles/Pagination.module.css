@@ -1,0 +1,36 @@
+.pageBtn{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    position: relative;
+    bottom: 2px;
+    cursor: pointer;
+}
+
+.numberList{
+    list-style: none;
+    display: flex;
+    width: 350px;
+    position: relative;
+    left: 100px;
+    top: 15px;
+}
+.numberList li{
+    
+    cursor: pointer;
+}
+
+.hellip{
+    color: white;
+}
+
+.active{
+    font-weight: 600;
+    color: orangered ;
+}
+.off{
+    font-weight: 400;
+    color: #fff ;
+    cursor: pointer
+}
