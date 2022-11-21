@@ -11,10 +11,10 @@ export default function Pagination(props) {
   }
 
   function handleSetPage(e) {
-    if (e.target.innerText === 1) {
+    if (Number(e.target.innerText) === 1) {
       props.setCurrentPage(pages[1]);
     }
-    if (e.target.innerText === pages[pages.length - 1]) {
+    if (Number(e.target.innerText) === pages[pages.length - 1]) {
       props.setCurrentPage(pages[pages.length - 1]);
     }
   }
