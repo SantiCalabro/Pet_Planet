@@ -11,17 +11,18 @@ export default function Error() {
   const ENG = lang === "English";
   return (
     <div>
-      <img src={errorBowl} className={E.errorBowl} alt="" />
       <div className={E.container}>
+        <img src={errorBowl} className={E.errorBowl} alt="" />
         <p className={E.sentence}>
           {ENG ? "Seems you're lost!" : "Parece que te perdiste!"}
         </p>
+        <Link to="/home" style={{ textDecoration: "none" }}>
+          <span className={E.button}>
+            {ENG ? "Return to the ship" : " Regresa a la nave"}
+          </span>
+        </Link>
       </div>
-      <Link to="/home">
-        <span className={E.button}>
-          {ENG ? "Return to the ship" : " Regresa a la nave"}
-        </span>
-      </Link>
+
       <div className={E.imgContainer}>
         <img className={E.ship} src={ship} alt="" />
         <img className={E.dog} src={errorGif} alt="" />
