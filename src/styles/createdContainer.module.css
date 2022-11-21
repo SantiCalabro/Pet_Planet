@@ -1,6 +1,7 @@
 .general{
   background-color: #0E0040;
   width: 100%;
+  height: 615px;
   display: flex;
 }
 .titleContainer{
@@ -9,7 +10,7 @@
   flex-direction: column;
   width: 500px;
   top: 140px;
-  right: 900px;
+  right: 750px;
   z-index: 501;
   color: #fff;
 }
@@ -20,7 +21,7 @@
   flex-direction: column;
   width: 500px;
   top: 140px;
-  right: 900px;
+  right: 750px;
   z-index: 502;
   color: #fff;
 }
@@ -32,7 +33,7 @@
 
 
 .pic{
-  width: 65%;
+  width: 70%;
   position: absolute;
-  top: 100px;
+  top: 96px;
 }

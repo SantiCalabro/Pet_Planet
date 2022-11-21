@@ -2,8 +2,8 @@
 .tagsArea{
     border-radius: 8px;
     display: flex;
-    width: 50%;
-    height: 480px;
+    width: 45%;
+    height: 400px;
     overflow-x: hidden;
     position: absolute;
     float: right;
@@ -24,11 +24,7 @@
   .tagsArea::-webkit-scrollbar-thumb:hover {
     background: #291b57 ;
   }
-.tempContainer label{
-    position: absolute;
-    left: 650px;
-    margin-top: -60px;
-}
+
 .tags{
     margin-top: 10px;
     display: flex;
@@ -115,18 +111,18 @@
     position: relative;
     right: 250px;
     top: 22px;
-    font-size: 14px;
+    font-size: 12px;
     color: #F44336;
 }
 .errorYears{
     position: relative;
     top: 2px;
-    font-size: 14px;
+    font-size: 12px;
     color: #F44336;
 }
 .errorWeight, .errorHeight{
     color: #F44336;
-    font-size: 14px;
+    font-size: 12px;
     position: relative;
     top: 22px;
     right: 165px;
@@ -134,7 +130,7 @@
 
 
 .errorUrl{
-    font-size: 14px;
+    font-size: 12px;
     color: #F44336;
     float: left;
     margin-top: 5px;
@@ -145,7 +141,7 @@
     position: relative;
     float: left;
     top: -32px;
-    left: 285px;
+    left: 335px;
     font-size: 14px;
 }
 .yearsContainer{
@@ -222,7 +218,7 @@
 .label{
     position: absolute;
     margin-top:-35px;
-    margin-left: 10px;
+    margin-left: 60px;
     color: #0E0040;
     font-weight: 600;
 }
@@ -237,7 +233,7 @@
     font-size: 14px;
     font-weight: 600;
     position: absolute;
-    right: 1050px;
+    right:910px;
     margin-top: 400px;
 }
 
@@ -258,7 +254,7 @@
     font-weight: 600;
     cursor: pointer;
     position: absolute;
-    right: 1050px;
+    right:910px;
     margin-top: 400px;
 }
 .selectedTempers{

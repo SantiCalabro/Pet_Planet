@@ -19,16 +19,20 @@ export default function SuccessMessage() {
       {active === false && (
         <div className={SU.container}>
           <>
-            <Link to="/created">
-              <p className={SU.createdBtn}>
-                {ENG ? "Visit your new friends" : "Visita a tus nuevos amigos"}
-              </p>
-            </Link>
-            <Link to="/create">
-              <p onClick={() => setHide()} className={SU.btn}>
-                {ENG ? "Create another dog" : "Crea otro perro"}
-              </p>
-            </Link>{" "}
+            <div className={SU.btnContainer}>
+              <Link to="/created" style={{ textDecoration: "none" }}>
+                <p className={SU.createdBtn}>
+                  {ENG
+                    ? "Visit your new friends"
+                    : "Visita a tus nuevos amigos"}
+                </p>
+              </Link>
+              <Link to="/create" style={{ textDecoration: "none" }}>
+                <p onClick={() => setHide()} className={SU.btn}>
+                  {ENG ? "Create another dog" : "Crea otro perro"}
+                </p>
+              </Link>{" "}
+            </div>
           </>
 
           <img className={SU.pic} src={successPic} alt="" />

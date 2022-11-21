@@ -201,6 +201,7 @@ border: solid 1px red;
     width: 240px;
     left:320px;
     margin-top: 75px;
+    text-align: left;
 }
 
 .editBtn, .deleteIcon{

@@ -14,31 +14,35 @@
     margin-top :150px;
 }
 
-.btn{
+.btnContainer{
     position: absolute;
-    right: 415px;
-    z-index:881;
+    margin-top: 380px;
+    right: 370px;
+    z-index:880;
+    width: 200px;
+    text-align: center;
+}
+
+.btn{
     padding: 5px;
     padding-left:10px;
     padding-right: 10px;
     border-radius: 10px;
     cursor: pointer;
-    margin-top: 210px;
     background-color: #fa450e;
     font-size: 14px;
     color: #fff;
+
+    left:40px;
+    margin-top: 5px;
 }
 
 .createdBtn{
-    position: absolute;
-    right: 400px;
-    z-index:880;
     padding: 5px;
     padding-left:10px;
     padding-right: 10px;
     border-radius: 10px;
     cursor: pointer;
-    margin-top: 170px;
     background-color: #11093d;
     font-size: 14px;
     color: #fff;
