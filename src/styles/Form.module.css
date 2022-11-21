@@ -222,7 +222,11 @@
     color: #0E0040;
     font-weight: 600;
 }
-
+.btnContainer{
+    position: absolute;
+    margin-top: 380px;
+    left: 235px;
+}
 .submitBtn{
     background-color: #b7b6bc;
     color: #fff;
@@ -232,9 +236,6 @@
     border-radius: 30px;
     font-size: 14px;
     font-weight: 600;
-    position: absolute;
-    right:910px;
-    margin-top: 400px;
 }
 
 .btnActive:hover{
@@ -253,9 +254,7 @@
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
-    position: absolute;
-    right:910px;
-    margin-top: 400px;
+
 }
 .selectedTempers{
   position: relative;
