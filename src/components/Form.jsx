@@ -52,7 +52,7 @@ export default function Form() {
 
   React.useEffect(() => {
     dispatch(showDogs());
-  }, []);
+  }, [dispatch]);
 
   function setTemp(e) {
     const select = input.temperaments.find(el => el === e.target.innerText);
