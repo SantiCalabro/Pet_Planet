@@ -75,11 +75,6 @@ function rootReducer(state = initialState, action) {
         showDogs: [...state.showDogs, action.payload],
       };
 
-    case DOG_DELETE:
-      return {
-        ...state,
-        showDogs: [],
-      };
     case CLEAR_DETAIL:
       return {
         ...state,

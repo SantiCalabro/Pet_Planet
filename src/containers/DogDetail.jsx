@@ -52,17 +52,17 @@ export default function DogDetail(props) {
   React.useEffect(() => {
     dispatch(clearDetail());
     dispatch(showDetail(id));
-  }, [id]);
+  }, [id, dispatch]);
 
   React.useEffect(() => {
     return () => {
       dispatch(clearDetail());
     };
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
-      {err == "error" ? (
+      {err === "error" ? (
         <Error />
       ) : (
         <>

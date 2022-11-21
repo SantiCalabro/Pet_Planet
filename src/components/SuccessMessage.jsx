@@ -2,7 +2,6 @@ import React from "react";
 import successPic from "../statics/success.png";
 import { Link } from "react-router-dom";
 import S from "../styles/Success.module.css";
-import { useState } from "react";
 import { useSelector } from "react-redux";
 
 export default function SuccessMessage() {

@@ -11,10 +11,10 @@ export default function FormContainer() {
   const err = useSelector(state => state.error);
   React.useEffect(() => {
     dispatch(showBreeds());
-  }, []);
+  }, [dispatch]);
   React.useEffect(() => {
     dispatch(showTemperaments());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div>

@@ -78,7 +78,7 @@ export const dogUpdate = (id, payload) => async dispatch => {
 
 export const dogDelete = id => async dispatch => {
   try {
-    const res = await axios.delete(`/dogs?id=${id}`);
+    await axios.delete(`/dogs?id=${id}`);
     return dispatch({ type: DOG_DELETE });
   } catch (e) {
     console.log(e);

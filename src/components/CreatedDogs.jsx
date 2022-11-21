@@ -13,7 +13,7 @@ export default function CreatedDogs() {
   const ENG = lang === "English";
   React.useEffect(() => {
     dispatch(getCreated());
-  }, []);
+  }, [dispatch]);
 
   return (
     <>

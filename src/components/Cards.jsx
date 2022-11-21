@@ -30,7 +30,7 @@ export default function Cards() {
   return (
     <div>
       <div className={C.container}>
-        {Object.values(currentItems)[0] == "Ups! Dog not found!" ? (
+        {Object.values(currentItems)[0] === "Ups! Dog not found!" ? (
           <div className={C.notFound}>
             <img src={notFound} alt="" />
           </div>
@@ -53,7 +53,7 @@ export default function Cards() {
             </div>
           ))
         ) : (
-          <img className={C.notDogs} src={notDogs}></img>
+          <img className={C.notDogs} src={notDogs} alt=""></img>
         )}
       </div>
       <Pagination

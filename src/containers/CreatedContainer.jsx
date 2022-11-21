@@ -11,7 +11,7 @@ export default function CreatedContainer() {
   const ENG = lang === "English";
   return (
     <>
-      {err == "error" ? (
+      {err === "error" ? (
         <Error />
       ) : (
         <div>

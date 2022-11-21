@@ -24,6 +24,7 @@ export default function Home() {
   const dogs = useSelector(state => state.showDogs);
   const err = useSelector(state => state.error);
   const lang = useSelector(state => state.language);
+  // eslint-disable-next-line
   const [loading, setLoading] = useState(true);
   const [active, setActive] = useState(false);
   const ENG = lang === "English";
@@ -33,7 +34,7 @@ export default function Home() {
     dispatch(showTemperaments());
     dispatch(showBreeds());
     setLoading(false);
-  }, []);
+  }, [dispatch]);
 
   var audio = new Audio(barkSound);
 
@@ -57,7 +58,7 @@ export default function Home() {
   return (
     <div className={H.general}>
       <hr />
-      {err == "error" ? (
+      {err === "error" ? (
         <Error />
       ) : !dogs.length ? (
         <div className={H.loadingContainer}>

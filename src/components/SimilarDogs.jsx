@@ -10,8 +10,7 @@ export default function SimilarDogs(props) {
   const dispatch = useDispatch();
   React.useEffect(() => {
     dispatch(showDogs());
-    console.log(props.id);
-  }, []);
+  }, [dispatch]);
   const dogs = useSelector(state => state.showDogs);
   const breedFilter = dogs.filter(el => el.breedGroup === props.breed);
 

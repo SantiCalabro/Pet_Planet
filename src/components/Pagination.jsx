@@ -11,10 +11,10 @@ export default function Pagination(props) {
   }
 
   function handleSetPage(e) {
-    if (e.target.innerText == 1) {
+    if (e.target.innerText === 1) {
       props.setCurrentPage(pages[1]);
     }
-    if (e.target.innerText == pages[pages.length - 1]) {
+    if (e.target.innerText === pages[pages.length - 1]) {
       props.setCurrentPage(pages[pages.length - 1]);
     }
   }
@@ -22,7 +22,7 @@ export default function Pagination(props) {
     if (props.currentPage !== 1) {
       if (e.target.innerText === "<" || e.target.id === "prev") {
         props.setCurrentPage(props.currentPage - 1);
-        if ((props.currentPage - 1) % props.pageNumberLimit == 0) {
+        if ((props.currentPage - 1) % props.pageNumberLimit === 0) {
           props.setmaxPageNumberLimit(
             props.maxPageNumberLimit - props.pageNumberLimit
           );
@@ -51,7 +51,7 @@ export default function Pagination(props) {
         <li>
           <button
             className={P.pageBtn}
-            disabled={props.currentPage == pages[1] ? true : false}
+            disabled={props.currentPage === pages[1] ? true : false}
             onClick={e => handleNext(e)}
           >
             &lt;
@@ -68,7 +68,7 @@ export default function Pagination(props) {
           pages.map(el =>
             el < props.maxPageNumberLimit && el > props.minPageNumberLimit ? (
               <li
-                className={props.currentPage == el ? P.active : P.off}
+                className={props.currentPage === el ? P.active : P.off}
                 key={el}
                 id={el}
                 onClick={handlePage}
@@ -88,7 +88,7 @@ export default function Pagination(props) {
           <button
             className={P.pageBtn}
             disabled={
-              props.currentPage == pages[pages.length - 1] ? true : false
+              props.currentPage === pages[pages.length - 1] ? true : false
             }
             onClick={e => handleNext(e)}
           >

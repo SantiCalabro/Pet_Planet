@@ -52,7 +52,7 @@ export default function Form() {
 
   React.useEffect(() => {
     dispatch(showDogs());
-  }, []);
+  }, [dispatch]);
 
   function setTemp(e) {
     const select = input.temperaments.find(el => el === e.target.innerText);
@@ -122,7 +122,7 @@ export default function Form() {
     const errors = {};
     const regexName = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     const regexUrl =
-      /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/;
+      /[-a-zA-Z0-9@:%._~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_.~#?&//=]*)?/;
 
     if (!input.name) {
       ENG

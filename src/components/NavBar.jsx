@@ -42,10 +42,15 @@ export default function NavBar() {
           <a
             href="https://www.linkedin.com/in/santiago-calabr%C3%B3-5b7354219/"
             target="_blank"
+            rel="noreferrer"
           >
             <img className={N.linkedin} src={Linkedin} alt="" />
           </a>
-          <a href="https://github.com/SantiCalabro" target="_blank">
+          <a
+            href="https://github.com/SantiCalabro"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img className={N.github} src={Github} alt="" />
           </a>
         </div>

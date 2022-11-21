@@ -10,10 +10,9 @@ export default function FilterSection() {
   const breeds = useSelector(state => state.showBreeds);
   const lang = useSelector(state => state.language);
   const ENG = lang === "English";
-  const filtrados = useSelector(state => state.filteredDogs);
+
   const temperaments = useSelector(state => state.showTemperaments);
   const dispatch = useDispatch();
-
   const [breed, setBreed] = useState("");
   const [temp, setTemp] = useState("");
   const breedNames = Object.values(breeds).map(el => el.name);
@@ -22,8 +21,9 @@ export default function FilterSection() {
 
   function handleSort(e) {
     dispatch(clearFilter());
+    var sorted = 0;
     if (e.target.innerText === "A-Z") {
-      var sorted = dogs.sort(function (a, b) {
+      sorted = dogs.sort(function (a, b) {
         if (a.name < b.name) {
           return -1;
         }
@@ -33,7 +33,7 @@ export default function FilterSection() {
         return 0;
       });
     } else if (e.target.innerText === "Z-A") {
-      var sorted = dogs.sort(function (a, b) {
+      sorted = dogs.sort(function (a, b) {
         if (a.name > b.name) {
           return -1;
         }
@@ -54,7 +54,7 @@ export default function FilterSection() {
       (e.target.id === "breed" && temp === "DEFAULT")
     ) {
       dispatch(clearFilter());
-      const filtered = dogs.filter(el => el.breedGroup == e.target.value);
+      const filtered = dogs.filter(el => el.breedGroup === e.target.value);
       dispatch(getFiltered(filtered));
     } else if (
       (e.target.id === "temp" && breed === "") ||
@@ -76,7 +76,7 @@ export default function FilterSection() {
       temp !== "DEFAULT"
     ) {
       dispatch(clearFilter());
-      const filtered = dogs.filter(el => el.breedGroup == breed);
+      const filtered = dogs.filter(el => el.breedGroup === breed);
       const both = filtered.filter(el => el.temperaments.includes(temp));
 
       dispatch(getFiltered(both));
@@ -87,18 +87,18 @@ export default function FilterSection() {
     }
 
     if (temp === "DEFAULT" && breed !== "") {
-      const filtered = dogs.filter(el => el.breedGroup == breed);
+      const filtered = dogs.filter(el => el.breedGroup === breed);
       dispatch(getFiltered(filtered));
     }
     if (temp === "DEFAULT" && breed === "DEFAULT") {
       dispatch(getFiltered(dogs));
     }
-  }, [breed, temp]);
+  }, [breed, temp, dispatch, dogs]);
 
   return (
     <div>
       <div className={F.container}>
-        <img src={filter} className={F.filterLabel} />
+        <img src={filter} className={F.filterLabel} alt="" />
         <form>
           <select
             name="breed"

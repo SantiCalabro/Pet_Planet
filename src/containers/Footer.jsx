@@ -48,6 +48,7 @@ export default function Footer() {
           <a
             href="https://www.linkedin.com/in/santiago-calabr%C3%B3-5b7354219/"
             target="_blank"
+            rel="noreferrer"
           >
             {ENG ? "Contact me!" : "Contactame!"}
           </a>
